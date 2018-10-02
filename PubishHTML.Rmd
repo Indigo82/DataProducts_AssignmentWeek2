@@ -1,0 +1,18 @@
+---
+title: "2018-10-02"
+author: ""
+date: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r leaflet}
+library(leaflet)
+library(dplyr)
+
+leaflet() %>% addTiles() %>% addMarkers(lng = 8.682127, lat = 50.110924)
+```
