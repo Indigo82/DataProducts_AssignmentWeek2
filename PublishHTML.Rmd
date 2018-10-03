@@ -9,10 +9,11 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-```{r leaflet}
+````{r, include = FALSE}
 library(leaflet)
 library(dplyr)
+````
 
+```{r echo = FALSE}
 leaflet() %>% addTiles() %>% addMarkers(lng = 8.682127, lat = 50.110924)
 ```
